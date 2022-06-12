@@ -1,0 +1,237 @@
+.todos{
+    color: white;
+    background-color: #680179;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 1%;
+    margin: 2%;
+}
+.productTitle{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    
+}
+.productImg{
+    height: 100px;
+}
+.loja{
+    margin-left: 2%;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.iten{
+    color: #680179;
+    background-color: #E8F7EE;
+    width: 250px;
+    height: 350px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.product {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divCarrinho{
+    position:relative;
+    margin-right: 5%;
+}
+.carrinhoImg{
+    height: 50px;
+}
+.Button{
+    font-weight: 600;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #A404BE;
+}
+.boxCarrinho{
+    width: 400px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    list-style: none;
+    border: 1px solid white;
+    background-color: #A404BE;
+    margin-block-end: 10px;
+    margin-top: 10px;
+}
+.carrinho{
+  width: 400px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 330px) and (max-width: 374px){
+    .loja{
+        margin-left: 2%;
+        width: 370px;
+        margin-top: 15px;
+    }
+    .iten{
+        width: 100px;
+        height: 180px;
+        margin: 1%;    
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        margin-block-end: 1px;
+        margin-top: 5px;
+        font-size: 10px;
+        height: 140px;
+    }
+    .carrinho{
+        width: 100px;
+        margin-top: 15px;
+      }
+      .boxCarrinho{
+        width: 100px;
+    }
+    .productImg{
+        height: 50px;
+    }
+    .productTitle{
+        font-size: 10px;
+    }
+    .btnCad{
+        height: 20px;
+        width: 50px;
+    }
+    .userPage{
+        width: 350px;
+    }
+    .Button{
+        font-weight: 600;
+        font-size: 12px;
+        width: 60px;
+        height: 20px;
+      
+    }
+
+    
+}
+@media screen and (min-width: 375px) and (max-width: 399px){
+    .loja{
+        margin-left: 2%;
+        width: 380px;
+        margin-top: 15px;
+    }
+    .iten{
+        width: 100px;
+        height: 180px;
+        margin: 1%;    
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        margin-block-end: 1px;
+        margin-top: 5px;
+        font-size: 10px;
+        height: 130px;
+    }
+    .carrinho{
+        width: 100px;
+        margin-top: 15px;
+      }
+      .boxCarrinho{
+        width: 100px;
+    }
+    .productImg{
+        height: 50px;
+    }
+    .productTitle{
+        font-size: 10px;
+    }
+    .btnCad{
+        height: 20px;
+        width: 50px;
+    }
+    .userPage{
+        width: 350px;
+    }
+    .Button{
+        font-weight: 600;
+        font-size: 10px;
+        width: 80px;
+        height: 20px;
+      
+    }
+    .carrinhoImg{
+        height: 30px;
+    }
+
+    
+}
+@media screen and (min-width: 400px) and (max-width: 500px){
+    .loja{
+        margin-left: 2%;
+        margin-top: 15px;
+    }
+    .iten{
+        width: 100px;
+        height: 170px;
+        margin: 1%;    
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        margin-block-end: 1px;
+        margin-top: 5px;
+        font-size: 12px;
+        height: 150px;
+    }
+    .carrinho{
+        width: 100px;
+        margin-top: 15px;
+      }
+      .boxCarrinho{
+        width: 100px;
+    }
+    .productImg{
+        height: 50px;
+    }
+    .productTitle{
+        font-size: 10px;
+    }
+    .btnCad{
+        height: 20px;
+        width: 50px;
+    }
+    .userPage{
+        width: 350px;
+    }
+    .todos{
+        width: 400px;
+    }
+    .product{
+        height: 50px;
+    }
+    .carrinhoImg{
+        height: 30px;
+    }
+    .Button{
+        width: 80px;
+        height: 25px;
+        font-size: 15px;
+    }
+}

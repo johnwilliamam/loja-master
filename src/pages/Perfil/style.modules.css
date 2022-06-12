@@ -1,0 +1,78 @@
+.containerPerfil {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+
+}
+.Form{
+    
+    padding: 20px;
+    
+    margin: 100px;
+    border-color: black;
+    color: black;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: white;
+    border: 2px;
+    border-style:groove;
+}
+.Input{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+    margin-block-end: 15px;
+    font-size: 20px;
+    text-align:start;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.tituloPerfil {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.Label{
+    display: flex;
+    justify-content: start;
+    margin-right:37%;
+    
+}
+.Btn1{
+    
+    background-color: #A404BE;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    font-weight: bold;
+   
+
+}
+.Btn2{
+    background-color: #A404BE;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+   
+    font-weight: bold;
+  
+  
+
+}
+
+.btnsPerfil {
+
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    
+    justify-content: center;
+}
