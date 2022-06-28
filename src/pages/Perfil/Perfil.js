@@ -1,7 +1,7 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
-import "./style.modules.css"
+import "./style.modules.css";
 
 export function Perfil() {
     const params = useParams();
@@ -16,7 +16,7 @@ export function Perfil() {
 
     useEffect(()=> {
         async function fetchUser(){
-            const response = await axios.get(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`
+            const response = await axios.get(`https://localhost:7000/${params.id}`
             );
             setCadastro({...response.data})
         }
@@ -28,11 +28,11 @@ export function Perfil() {
     };
    async function handleSubmit (e) {
         e.preventDefault();
-       await axios.put(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`, cadastro)
+       await axios.put(`https://localhost:7000/${params.id}`, cadastro)
 }
 
  async function handleDelete(){ 
-     await axios.delete(`https://ironrest.herokuapp.com/Lugile-usuários/${params.id}`)
+     await axios.delete(`https://localhost:7000/${params.id}`)
      navigate("/");
  }
 

@@ -10,6 +10,11 @@ export function Cadastro() {
         password: "",
         carrinho: [],
     })
+    var config = {
+        Headers: {
+        "Access-Control-Allow-Origin": '*'
+        }
+    };
 
     function handleChange(e){
         setCadastro({...cadastro, [e.target.name]: e.target.value});
@@ -18,7 +23,7 @@ export function Cadastro() {
     async function handleSubmit(e){
         e.preventDefault();
 
-         await axios.post("https://ironrest.herokuapp.com/Lugile-usuários", cadastro)
+         await axios.post("http://localhost:7000/usuarios", cadastro)
          console.log(cadastro)
          console.log(typeof(cadastro))
          

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./style.modules.css"
+import "./style.modules.css";
 
 export function Login() {
     const navigate = useNavigate();
@@ -11,7 +11,9 @@ export function Login() {
     
     useEffect(() => {
         async function getPassword(){
-            const response = await axios.get(`https://ironrest.herokuapp.com/findOne/Lugile-usuários?password=${password}`)
+            const response = await axios.get(`http://localhost:7000/usuarios?password=${password}`)
+            const resposta = await JSON.stringify(response)
+            console.log(`REPOSTA DO LOGIN: ${resposta}`)
             setLogin(response.data)
         }
         getPassword();
